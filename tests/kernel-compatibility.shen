@@ -6,6 +6,11 @@
   Name Expected Actual -> (error "~A: expected ~R, got ~R~%" Name Expected Actual))
 
 (assert-kernel-equal
+  "kernel version"
+  "42.0"
+  (version))
+
+(assert-kernel-equal
   "input+ macro expansion"
   [shen.input-h+ number [stinput]]
   (macroexpand [input+ number]))

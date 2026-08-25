@@ -111,7 +111,7 @@
 (define shen.read-unit-string
   _ -> (error "character input streams are not supported~%"))
 
-\* Shen 41.3 expands source input+ calls to shen.input-h+, but its
+\* Shen 42.0 expands source input+ calls to shen.input-h+, but its
    lambda table still refers to input+ directly. *\
 
 (define input+
